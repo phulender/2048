@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <title>2048 Game</title>
+  </head>
+  <body>
+    <div class="s1">
+      <div class="board">
+        <div id="status">
+          <h1 id="game_status"></h1>
+        </div>
+        <div class="score">
+          <div class="textscore">
+            <h1 class="num">Score:</h1>
+          </div>
+          <div class="numscore">
+            <h1 class="num" id="score">0</h1>
+          </div>
+        </div>
+        <div class="undo" onclick="undo_game_state()">
+          <h3>Undo</h3>
+        </div>
+      </div>
+      <div
+        class="parent"
+        ontouchstart="touchStart(event)"
+        ontouchend="touchEnd(event)"
+        ontouchmove="touchMoving(event)"
+      >
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+    </div>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </body>
+</html>
